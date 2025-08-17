@@ -103,3 +103,4 @@ if(((void*)memory<=ptr)&&(ptr<=(void*)(memory+20000)))
 ~~~
 
 Here we check whether the address to which the pointer given as an argument to the function actually lies within the address range of the memory array that we used for the purpose. If yes,we simply set the free flag in the metadata block to 1 indicating that it is free and scan through and merge the consecutive blocks that are free, if any.
+
